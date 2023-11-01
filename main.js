@@ -68,45 +68,45 @@ function addressFact(input) {
 
 marker.on("dragend", onDragEnd);
 
-// let theBody = document.getElementById("theBody");
-// let searchInput = document.createElement("input");
-// searchInput.classList.add("searchInput");
-// searchInput.setAttribute("type", "text");
-// searchInput.setAttribute("placeholder", "Enter address or place");
-// theBody.appendChild(searchInput);
-// let searchBtn = document.createElement("button");
-// searchBtn.classList.add("search-btn");
-// searchBtn.innerHTML = "search";
-// theBody.appendChild(searchBtn);
+let theBody = document.getElementById("theBody");
+let searchInput = document.createElement("input");
+searchInput.classList.add("searchInput");
+searchInput.setAttribute("type", "text");
+searchInput.setAttribute("placeholder", "Enter address or place");
+theBody.appendChild(searchInput);
+let searchBtn = document.createElement("button");
+searchBtn.classList.add("search-btn");
+searchBtn.innerHTML = "search";
+theBody.appendChild(searchBtn);
 
-// searchBtn.addEventListener("click", () => {
-//   let searchValue = searchInput.value;
-//   resetMap(searchValue);
-// });
+searchBtn.addEventListener("click", () => {
+  let searchValue = searchInput.value;
+  resetMap(searchValue);
+});
 
-// function resetMap(searchValue) {
-//   geocode({
-//     singleLine: searchValue,
-//     outFields: "*",
-//     authentication,
-//   }).then((res) => {
-//     let theAdd = res.candidates[0].attributes.LongLabel;
-//     let searchLong = res.candidates[0].location.x;
-//     let searchLat = res.candidates[0].location.y;
-//     moveMap(searchLong, searchLat);
-//     getNewInfo(theAdd);
-//   });
-// }
+function resetMap(searchValue) {
+  geocode({
+    singleLine: searchValue,
+    outFields: "*",
+    authentication,
+  }).then((res) => {
+    let theAdd = res.candidates[0].attributes.LongLabel;
+    let searchLong = res.candidates[0].location.x;
+    let searchLat = res.candidates[0].location.y;
+    moveMap(searchLong, searchLat);
+    getNewInfo(theAdd);
+  });
+}
 
-// function getNewInfo(theAdd) {
-//   coordinates.innerHTML = theAdd;
-//   addressFact(theAdd);
-// }
+function getNewInfo(theAdd) {
+  coordinates.innerHTML = theAdd;
+  addressFact(theAdd);
+}
 
-// function moveMap(searchLong, searchLat) {
-//   map.flyTo({
-//     center: [searchLong, searchLat],
-//     zoom: 12,
-//   });
-//   marker.setLngLat([searchLong, searchLat]);
-// }
+function moveMap(searchLong, searchLat) {
+  map.flyTo({
+    center: [searchLong, searchLat],
+    zoom: 12,
+  });
+  marker.setLngLat([searchLong, searchLat]);
+}

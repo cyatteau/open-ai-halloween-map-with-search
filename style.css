@@ -9,7 +9,7 @@ body {
   bottom: 0;
   width: 100%;
 }
-/* 
+
 .searchInput {
   position: absolute;
   top: 20px;
@@ -32,11 +32,11 @@ body {
   background-color: rgb(107, 165, 241);
   border-radius: 10px;
   font-weight: 900;
-} */
-/* 
+}
+
 .search-btn:hover {
   cursor: pointer;
-} */
+}
 
 .coordinates {
   background: rgba(50, 0, 73, 0.8);
