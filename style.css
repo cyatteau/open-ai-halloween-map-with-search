@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* 
+.searchInput {
+  position: absolute;
+  top: 20px;
+  right: 77px;
+  display: block;
+  padding: 6.5px;
+  font-size: 17px;
+  font-family: cursive;
+  border-radius: 8px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  padding: 6.5px;
+  font-size: 17px;
+  font-family: cursive;
+  background-color: rgb(107, 165, 241);
+  border-radius: 10px;
+  font-weight: 900;
+} */
+/* 
+.search-btn:hover {
+  cursor: pointer;
+} */
+
+.coordinates {
+  background: rgba(50, 0, 73, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  border-radius: 3px;
+  display: block;
+  font-family: cursive;
+}
+
+.fact {
+  background: rgba(208, 64, 0, 0.85);
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 3px;
+  display: block;
+  width: 350px;
+  overflow-y: auto;
+  white-space: normal;
+  font-family: cursive;
+}
