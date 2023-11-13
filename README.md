@@ -3,7 +3,7 @@
 ## Description
 This app uses the OpenAI API, a MapLibre GL JS map, and ArcGIS location services to display a scary fact about an area. Drag the pin to find a new scary fact!
 
-## Demo
+## Demo Clop
 ![GIF](https://github.com/cyatteau/open-ai-halloween-map-with-search/assets/112517097/08fe72b7-0b1f-4e0d-8bd6-01bf123b055d)
 
 ## Required Dependencies
