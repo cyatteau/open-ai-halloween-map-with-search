@@ -50,7 +50,6 @@ body {
   line-height: 18px;
   border-radius: 3px;
   display: block;
-  font-family: cursive;
 }
 
 .fact {
@@ -68,5 +67,28 @@ body {
   width: 350px;
   overflow-y: auto;
   white-space: normal;
-  font-family: cursive;
+}
+
+@media screen and (max-width: 750px) {
+  .fact {
+    font-size: 11px;
+    top: 70px;
+    left: 42%;
+    width: 50%;
+    line-height: 15px;
+  }
+  .search-btn {
+    font-size: 12px;
+    right: 8px;
+  }
+
+  .searchInput {
+    font-size: 12px;
+    right: 70px;
+  }
+
+  .coordinates {
+    bottom: 8%;
+    font-size: 11px;
+  }
 }

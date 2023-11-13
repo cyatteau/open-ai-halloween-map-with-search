@@ -1,7 +1,7 @@
 import "./style.css";
 import { ApiKeyManager } from "@esri/arcgis-rest-request";
 import { reverseGeocode, geocode } from "@esri/arcgis-rest-geocoding";
-import { Map, Marker } from "maplibre-gl";
+import { Map, Marker, AttributionControl } from "maplibre-gl";
 import { Configuration, OpenAIApi } from "openai";
 const api_Key = import.meta.env.VITE_ARCGIS_KEY;
 const authentication = ApiKeyManager.fromKey(api_Key);
@@ -12,7 +12,12 @@ const map = new Map({
   style: `https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/arcgis/dark-gray?token=${api_Key}`,
   center: [-50.2505, 34.0442],
   zoom: 2,
+  attributionControl: false
 });
+
+map.addControl(new AttributionControl({
+  compact: false
+}));
 
 let marker = new Marker({
   draggable: true,
